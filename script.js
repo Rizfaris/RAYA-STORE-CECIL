@@ -3,10 +3,10 @@
 // =========================================================================
 
 // 1. Masukkan nomor WhatsApp Anda (Gunakan kode negara 62 di depan, TANPA tanda + atau spasi)
-const NOMOR_WHATSAPP = '623804073445'; 
+const NOMOR_WHATSAPP = '6283804073445'; 
 
 // 2. Masukkan link foto/gambar QRIS DANA Anda di sini (Upload foto QRIS Anda ke postimages.org atau sejenisnya)
-const LINK_QRIS_DANA = 'https://imgur.com/a/D5kz35E';
+const LINK_QRIS_DANA = 'https://imgur.com/gallery/qr-faris-D5kz35E';
 
 // 3. Masukkan Detail Rekening Bank jika pembeli memilih Transfer Manual
 const INFO_TRANSFER = `<strong>Dana:</strong> 083804073445<br><strong>A/N:</strong> Kedai Mie Ayam Modern`;
@@ -150,7 +150,7 @@ function checkout() {
         modalContent.innerHTML = `
             <p class="text-xs text-gray-600 mb-3">Silakan simpan/screenshot gambar QRIS DANA di bawah ini, lalu bayar sejumlah <strong>Rp ${total.toLocaleString('id-ID')}</strong>.</p>
             <div class="border-2 border-dashed border-gray-300 p-2 rounded-lg bg-gray-50 flex justify-center items-center qr-container">
-                <img src="${LINK_QRIS_DANA}" alt="QRIS DANA" onerror="this.src='https://imgur.com/a/D5kz35E
+                <img src="${LINK_QRIS_DANA}" alt="QRIS DANA" onerror="this.src='https://imgur.com/gallery/qr-faris-D5kz35E'
             <p class="text-[10px] text-gray-400 mt-2">Setelah bayar, wajib klik tombol hijau di bawah untuk mengirim detail pesanan ke WA.</p>
         `;
     } else if (method === 'transfer') {
